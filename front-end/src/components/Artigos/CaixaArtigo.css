@@ -1,0 +1,70 @@
+/* Estilização do título principal */
+.main-title {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.main-title b {
+  color: #000;
+}
+
+.highlight {
+  color: #ff9900; /* Cor laranja para 'Questionamentos' */
+}
+
+/* Container principal para os artigos */
+.articles-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Grid de artigos usando grid */
+.articles-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Colunas: 2 para o artigo maior e 1 para os menores */
+  gap: 20px;
+}
+
+/* Artigo principal ocupando mais espaço */
+.main-article {
+  grid-column: 1; /* Fica na primeira coluna */
+}
+
+/* Artigos menores */
+.small-articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 artigos menores lado a lado */
+  gap: 20px;
+}
+
+/* Ajusta as imagens dos cards */
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.main-article .card-img-top {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .articles-grid {
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+  }
+
+  .small-articles {
+    grid-template-columns: repeat(2, 1fr); 
+    flex: 1;/* 2 artigos menores lado a lado em telas pequenas */
+  }
+
+  .small-article .card-img-top {
+      height: 180px;
+  }
+}
+

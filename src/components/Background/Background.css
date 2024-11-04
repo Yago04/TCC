@@ -1,0 +1,27 @@
+/* Style for the first landing section */
+.first-landing {
+    height: 100vh; /* Full viewport height */
+    background-image: url('/public/images/first_landing.jpg'); /* Correct path to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Style for the footer */
+  .footer {
+    height: 300px; /* Adjust according to your design */
+    background-image: url('/public/images/footer.jpg'); /* Correct path to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }

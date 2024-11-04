@@ -1,0 +1,145 @@
+/* From Uiverse.io by alexmaracinaru */ 
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px; /* Adiciona um pouco de espaço nas laterais */
+}
+
+
+
+.card {
+    width: 280px;
+    background: white;
+    padding: .4em;
+    border: none;
+  }
+  img{
+    width: 280px;
+    height: 280px;
+    border-radius: 16px;
+    object-fit: cover;
+    
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 280px;
+    height: 280px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(85, 84, 84);
+    padding: 10px 7px 0;
+    font-weight: bold;
+
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+ 
+  .rating {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  
+  .rating input {
+    display: none;
+    opacity: 1;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+    transition: color 0.3s;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #ffc300;
+    transform: scale(1.2);
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    animation: bounce 0.5s ease-in-out alternate;
+  }
+  
+  @keyframes bounce {
+    to {
+      transform: scale(1.3);
+    }
+  }
+
+  /* From Uiverse.io by niat786 */ 
+.button-receita {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #F17228, #f0894c);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+ }
+ 
+ .button-receita:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+ }
+ 
+ @keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #F17228;
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+ }

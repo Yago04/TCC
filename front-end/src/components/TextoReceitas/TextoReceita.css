@@ -1,0 +1,13 @@
+.caixa-texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+.caixa-texto> h2{
+    color:#F54748;
+    font-weight: bold;
+    font-size: 2.5rem;
+}

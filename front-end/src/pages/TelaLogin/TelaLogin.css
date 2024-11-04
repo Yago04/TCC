@@ -1,0 +1,186 @@
+.header{
+top: 0;
+position: relative;
+
+}
+.container-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(255, 255, 255);
+    margin-top: 4%;
+}
+
+.container-principal-login {
+    width: 60vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -43px;
+}
+
+.titulo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.0;
+
+}
+
+.titulo h1:nth-child(1) {
+    color: red;
+    font-size: 45px;
+    font-style: bold;
+    margin: 0%;
+}
+
+.titulo h1:nth-child(2) {
+    color: #000;
+    font-size: 40px;
+    font-style: bold;
+}
+
+
+.container-login  {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    border-bottom: 90px;
+    box-shadow: 0px 0px 15px -9px rgba(0,0,0,0.55);}
+
+
+.form-login{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.email {
+    display: flex;
+    flex-direction: column;
+    height: 30%; 
+    width: 70%;
+    margin: 0%;
+}
+
+.email>label {
+    font-weight: bold;
+
+}
+
+.email>input {
+    width: 100%;
+    height: 40%;
+    border-radius: 8px;
+    border-color: #DBDFD0;
+    text-align: justify;
+    padding-left: 10px;
+
+}
+
+.senha {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 70%;
+    margin: 0%;
+}
+
+
+.senha>label {
+    font-weight: bold;
+}
+
+
+.button-login {
+    display: flex;
+    width: 70%;
+    height: 35%;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button-login>button:nth-child(1) {
+
+    width: 100%;
+    height: 40%;
+    border-radius: 25px;
+    background-color: #FF5B00;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.button-login>button:nth-child(2) {
+
+    width: 100%;
+    height: 40%;
+    border-radius: 25px;
+    border-color: #898989;
+    border: none;
+    cursor: pointer;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 40%;
+}
+
+
+.input-senha {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border-color: #DBDFD0;
+    text-align: justify;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-visualizar {
+    position: absolute;
+    right: 10px;
+    /* Distância do lado direito */
+    top: 50%;
+    /* Centralizar verticalmente */
+    transform: translateY(-50%);
+    /* Ajustar para centralizar */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button-login-gg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    
+}
+
+.footer{
+ position: relative;
+ margin: 0;
+ width: 100vw;
+ bottom: 0 ;
+}

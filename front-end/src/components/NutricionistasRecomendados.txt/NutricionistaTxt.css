@@ -1,0 +1,61 @@
+.nutricionista-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Estilo do título */
+.caixa-nutricionista h2 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilo do botão */
+.caixa-button button {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.caixa-button button:hover {
+    background-color: #e14e28;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nutricionista-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .caixa-button {
+        margin-top: 10px;
+        width: 100%; /* Faz o botão ocupar a largura toda */
+        display: flex;
+        justify-content: flex-end; /* Mantém o botão alinhado à direita */
+    }
+
+    .caixa-button button {
+        width: auto; /* Mantém o tamanho do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa-nutricionista h2 {
+        font-size: 20px; /* Reduz o tamanho do texto em telas menores */
+    }
+
+    .caixa-button button {
+        padding: 8px 16px; /* Ajusta o espaçamento do botão */
+        font-size: 14px;
+    }
+}

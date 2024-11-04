@@ -1,0 +1,25 @@
+{
+  "name": "web-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.650.0",
+    "@aws-sdk/client-s3": "^3.651.0",
+    "aws-sdk": "^2.1691.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "google-auth-library": "^9.14.1",
+    "jsonwebtoken": "^9.0.2",
+    "passport-google-oauth2": "^0.2.0"
+  }
+}

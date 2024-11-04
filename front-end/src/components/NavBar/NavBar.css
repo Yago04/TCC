@@ -1,0 +1,252 @@
+/* Navbar Container */
+.navbar-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 0px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    color: rgb(14, 13, 13);
+
+}
+
+/* Logo */
+.navbar-logo-menu {
+    margin-left: 40px;
+    position: relative;
+    z-index: 200;
+}
+
+.navbar-logo-menu h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Menu Icon */
+.menu-icon {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+
+.menu-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+/* Menu Icon Animation */
+.menu-icon .bar1.open {
+    transform: rotate(45deg) translate(5px, 12px);
+}
+
+.menu-icon .bar2.open {
+    opacity: 0;
+}
+
+.menu-icon .bar3.open {
+    transform: rotate(-45deg) translate(6px, -15px);
+}
+
+/* Navigation Links */
+.navbar-links-menu {
+    position: fixed;
+    top: 0;
+    left: -220px;
+    width: 200px;
+    height: 100%;
+    background-color: #FF5800;
+    color: white;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 500;
+}
+
+.navbar-links-menu.show {
+    left: 0;
+}
+
+.navbar-links-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-links-menu ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar-links-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-links-menu ul li a:hover {
+    color: #050505;
+}
+
+/* Right Side (Search, Profile, Favorites) */
+.navbar-right-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container-menu {
+    position: relative; /* Contêiner para posicionar o ícone */
+    
+}
+.search-bar-menu{
+    width: 450px;
+    padding: 10px 40px 10px 15px; 
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+}
+
+
+.search-icon-menu {
+    position: absolute;
+    right: 10px; /* Posiciona o ícone à direita do campo */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza o ícone verticalmente */
+    pointer-events: none; /* Evita interferência do ícone no clique */
+    font-size: 18px;
+}
+
+.search-bar-menu:focus {
+    border-color: #858585;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon-button-1 {
+    background-color: #FF5B00;
+    border: 2px solid;
+    color: #ffffff;
+    border-color:#FF5800 ;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 7px;
+    text-decoration: none;
+
+}
+.icon-button-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 2px solid;
+    color: #FF5B00;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 7px;
+    width: 60px;
+    height: 50px;
+    text-decoration: none;
+
+}
+.icon-button-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid;
+    color: #FF5B00;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 7px;
+    width: 60px;
+    height: 50px;
+    text-decoration: none;
+
+}
+
+.icon-button-2 :hover {
+    background-color: #ff2d2d;
+}
+
+.icon-button-3 svg {
+    width: 24px;
+    height: 24px;
+    color: green;
+    
+}
+
+
+/* Para telas pequenas (máximo de 768px) */
+@media (max-width: 768px) {
+    /* Esconder os itens do lado direito da navbar */
+    .navbar-right-menu, .search-container-menu {
+        display: none;
+    }
+
+    /* Mostrar os itens de login, registro e pesquisa dentro do menu lateral */
+    .navbar-links-menu ul {
+        padding: 0;
+    }
+
+    .navbar-links-menu ul li a {
+        display: block;
+        padding: 15px;
+        color: white;
+        font-size: 18px;
+    }
+
+    /* Adicionar os botões e a barra de pesquisa no menu lateral */
+    .navbar-links-menu ul {
+        padding-top: 20px;
+    }
+
+    .navbar-links-menu ul li:nth-child(5),
+    .navbar-links-menu ul li:nth-child(6),
+    .navbar-links-menu ul li:nth-child(7) {
+        display: block;
+    }
+
+    .navbar-links-menu ul li:nth-child(5) {
+        padding: 10px;
+    }
+
+    /* Estilos para a barra de pesquisa no menu lateral */
+    .navbar-links-menu input.search-bar-menu {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-right-menu, .search-container-menu {
+        display: none; /* Esconder na navbar superior */
+    }
+
+
+    .navbar-links-menu .icon-button-1,
+    .navbar-links-menu .icon-button-2,
+    .navbar-links-menu .icon-button-3,
+    .navbar-links-menu .search-bar-menu {
+        display: block; /* Mostrar dentro do menu lateral */
+        margin: 10px;
+    }
+}

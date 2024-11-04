@@ -1,0 +1,32 @@
+.recipe-grid {
+  margin: 20px;
+}
+
+.recipe-grid .row {
+  margin-bottom: 20px;
+}
+
+.recipe-grid .col-md-4 {
+  margin-bottom: 20px; 
+}
+
+.recipe-grid h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-image {
+  height: 200px;
+  object-fit: cover; 
+}

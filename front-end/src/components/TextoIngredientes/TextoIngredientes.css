@@ -1,0 +1,22 @@
+.Caixa-texto-ingrediente{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Caixa-texto-ingrediente > h2{
+
+    color: #212121;
+    font-weight: bold;
+    font-size:2.5rem;
+}
+
+.Caixa-texto-ingrediente > span{
+    color: #797575;
+  
+    font-size:2.0rem;
+
+}

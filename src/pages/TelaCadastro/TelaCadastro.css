@@ -1,0 +1,77 @@
+.form-container {
+    width: 500px;
+    margin: 60px auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+    
+  .page-heading {
+    text-align: center; /* Centers the text */
+    margin: 80px 0;
+  }
+  
+  .page-heading h1 {
+    color: #e53935; /* Red color for the first heading */
+    font-size: 30px; /* Adjust the size as needed */
+    font-weight: bold;
+  }
+  
+  .page-heading h2 {
+    color: #000000; /* Black color for the second heading */
+    font-size: 30px; /* Adjust the size as needed */
+    font-weight: bold;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 48%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="date"] {
+    width: 48%;
+  }
+  
+  .register-button {
+    width: 100%;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .google-button {
+    width: 100%;
+    background-color: #fff;
+    color: #555;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .google-button img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  

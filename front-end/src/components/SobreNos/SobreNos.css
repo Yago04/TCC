@@ -1,0 +1,175 @@
+.container-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adiciona espaçamento entre as colunas */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os itens se reorganizem em telas menores */
+}
+
+/* Seção da imagem principal */
+.main-image-grid {
+    flex-basis: 45%; /* O tamanho da imagem principal será de 45% do container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-image-grid img {
+    width: 100%;
+    max-width: 445px;
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Seção das imagens menores */
+.side-images-grid {
+    flex-basis: 30%; /* Tamanho da seção das imagens menores */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.side-images-grid img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.side-images-grid :nth-child(1) {
+    height: 333px;
+}
+
+.side-images-grid :nth-child(2) {
+    height: 240px;
+}
+
+/* Seção de conteúdo de texto */
+.text-content-grid {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.highlight-grid {
+    color: #D91F1F;
+}
+
+p {
+    margin-bottom: 20px;
+    color:#414536;
+}
+
+.benefits-list-grid {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.benefits-list-grid li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bi-clock-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #ffff;
+    background-color: #D91F1F;
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+}
+
+.bi-cash-stack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #ffff;
+    background-color: #D91F1F;
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+}
+
+.bi-basket3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #ffff;
+    background-color: #D91F1F;
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+}
+
+.bi-person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #ffff;
+    background-color: #D91F1F;
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+}
+.cta-button-grid {
+    width: 295.34px;
+    height: 52px;
+    padding: 10px 20px;
+    background-color: #FF5B00;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+li{
+    color: #2C2F24;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .container-grid {
+        flex-direction: column; /* Muda para layout em coluna */
+    }
+
+    .main-image-grid,
+    .side-images-grid,
+    .text-content-grid {
+        flex-basis: 100%; /* Ocupa 100% da largura em telas menores */
+    }
+
+    .main-image-grid img,
+    .side-images-grid img {
+        max-width: 100%; /* Garante que as imagens não ultrapassem a largura */
+        height: auto; /* Mantém a proporção correta */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button-grid {
+        font-size: 0.9rem;
+    }
+}

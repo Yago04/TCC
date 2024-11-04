@@ -1,0 +1,50 @@
+.titulo-Parceiro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.Container-Parceiros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Parceiro {
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px); /* Ajusta a largura dos cards */
+    max-width: calc(25% - 20px); /* Limita a largura dos cards */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.Parceiro img {
+    width: 100%;
+    height: 150px; /* Ajusta a altura das imagens */
+    object-fit:contain; /* Mantém a proporção das imagens */
+    border-radius: 8px;
+}
+
+.Parceiro:hover {
+    transform: scale(1.05); /* Efeito de zoom no hover */
+}
+
+@media (max-width: 1024px) {
+    .Parceiro {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .Parceiro {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .Parceiro {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,80 @@
+.filtros-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+.container-filtro-topo{
+  display: flex;
+  width: 100vw;
+}
+
+.Titulo-Pesquisa{
+    width: 50vw;
+    display: flex;
+    gap: 65%;
+    padding: 8px;
+    flex-direction: row;
+
+}
+
+.Filtro_Pesquisa{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-right: 3%;
+  gap: 10px;
+}
+
+.Filtro_Pesquisa h4{
+  font-size: 16px;
+}
+
+.Select-Titulo{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+
+  .filtros-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .Selects-Filtro{
+    width: 150px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .tags-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .tag {
+    background-color: #ddd;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  
+  .tag span {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button {
+    font-size: 0.9rem;
+  }
+  

@@ -1,0 +1,226 @@
+<<<<<<< HEAD:nutrycheff/back-end/web-node/front-end/nutrycheff/src/pages/TelaLogin/TelaLogin.css
+.header{
+top: 0;
+position: relative;
+
+}
+.container-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(255, 255, 255);
+=======
+header{
+    top: 0%;
+    position: sticky;
+}
+
+.container-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width:100%;
+    height: 100vh;
+    background-color: aqua;
+>>>>>>> 9bcba835a67b37d591a9a3faeecbf2c7ee3b09ab:nutrycheff/src/pages/TelaLogin/TelaLogin.css
+    margin-top: 4%;
+}
+
+.container{
+    width: 60vw;
+<<<<<<< HEAD:nutrycheff/back-end/web-node/front-end/nutrycheff/src/pages/TelaLogin/TelaLogin.css
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+=======
+    height: 80vh;   
+    background-color: #ffff;
+>>>>>>> 9bcba835a67b37d591a9a3faeecbf2c7ee3b09ab:nutrycheff/src/pages/TelaLogin/TelaLogin.css
+}
+
+.titulo{
+    width: 100%;
+<<<<<<< HEAD:nutrycheff/back-end/web-node/front-end/nutrycheff/src/pages/TelaLogin/TelaLogin.css
+    height: 40%;
+=======
+    background-color: rgb(28, 185, 73);
+>>>>>>> 9bcba835a67b37d591a9a3faeecbf2c7ee3b09ab:nutrycheff/src/pages/TelaLogin/TelaLogin.css
+    display: flex;
+    justify-content: center;
+}
+
+.titulo > h1{
+   font-family: 'Oswal,sans-serif';
+    font: bold;
+    
+}
+
+.container-login{
+    width: 100%;
+    height: 70%;
+    display: flex;
+<<<<<<< HEAD:nutrycheff/back-end/web-node/front-end/nutrycheff/src/pages/TelaLogin/TelaLogin.css
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    border-bottom: 90px;
+    box-shadow: 0px 0px 15px -9px rgba(0,0,0,0.55);}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    height: 30%; 
+    width: 70%;
+    margin: 0%;
+}
+
+.email>label {
+    font-weight: bold;
+
+}
+
+.email>input {
+    width: 100%;
+    height: 40%;
+    border-radius: 8px;
+    border-color: #DBDFD0;
+    text-align: justify;
+    padding-left: 10px;
+
+}
+
+.senha {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 70%;
+    margin: 0%;
+}
+
+
+.senha>label {
+    font-weight: bold;
+}
+
+
+.button-login {
+    display: flex;
+    width: 70%;
+    height: 35%;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button-login>button:nth-child(1) {
+
+    width: 100%;
+    height: 40%;
+    border-radius: 25px;
+    background-color: #FF5B00;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.button-login>button:nth-child(2) {
+
+    width: 100%;
+    height: 40%;
+    border-radius: 25px;
+    border-color: #898989;
+    border: none;
+    cursor: pointer;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 40%;
+}
+
+
+.input-senha {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border-color: #DBDFD0;
+    text-align: justify;
+    padding-left: 10px;
+=======
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.email{
+>>>>>>> 9bcba835a67b37d591a9a3faeecbf2c7ee3b09ab:nutrycheff/src/pages/TelaLogin/TelaLogin.css
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 30%;
+}
+
+.email> input{
+    width: 100%;
+    height: 30%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.email > input:focus{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+
+.senha{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 30%;
+  
+}
+
+.senha> input{
+    width: 100%;
+    height: 30%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.senha  input:focus{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+.senha> button{
+    margin-top: 15%;
+    height: 30%;
+    width: 100%;
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border-radius: 100px;
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    border: none; /* Remover borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Sombreamento */
+}
+
+.footer{
+ position: relative;
+ margin: 0;
+ width: 100vw;
+ bottom: 0 ;
+}
