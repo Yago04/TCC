@@ -16,7 +16,7 @@ import TextoNutricionista from "../components/NutricionistasRecomendados.txt";
 import Nutricionistas from "../components/Nutricionistas";
 import Parceiros from "../components/Parceiros";
 import Navbar from "../components/NavBar";
-import ResultadoPesquisa from "../pages/Categoria/components/ResultadoPesquisa/receitas";
+import ResultadoPesquisa from "../pages/Categoria";
 
 
 

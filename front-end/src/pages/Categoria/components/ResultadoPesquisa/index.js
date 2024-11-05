@@ -5,7 +5,7 @@ import { Card, CardImg, CardBody, CardTitle, CardText, Pagination, PaginationIte
 
 const RecipeGrid = ({ recipes = [] }) => { 
   
-  const itemsPerPage = 8;
+  const itemsPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(recipes.length / itemsPerPage);
@@ -18,16 +18,21 @@ const RecipeGrid = ({ recipes = [] }) => {
 
   return (
     <div className="recipe-grid">
+      <div className='container-titleLine'>
+
       <h2>Receitas ({recipes.length})</h2>
+      <hr className="custom-line" />
+      </div>
       <div className="row">
         {currentRecipes.map((recipe, index) => (
-          <div className="col-md-4" style={{justifyContent:"center", alignItems:"center"}} key={index}>
+          <div className="col-md-4" style={{ display:'flex', justifyContent:"center", alignItems:"center"}} key={index}>
             <Card>
               <CardImg top    src={recipe.image} alt={recipe.title} />
               <CardBody>
-                <h1>oi</h1>
                 <CardTitle tag="h5" style={{textAlign:"center"}}>{recipe.title}</CardTitle>
-                <CardText>{recipe.description}</CardText>
+            
+                <CardText style={{textAlign:"center"}}>{recipe.description}</CardText>
+
                 <div className="rating">
                   {'⭐'.repeat(recipe.rating)}
                 </div>
