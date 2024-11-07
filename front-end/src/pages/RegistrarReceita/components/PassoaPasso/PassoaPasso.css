@@ -1,0 +1,74 @@
+.custom-minor-line{
+    width: 80%;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    border-top: 3px solid rgb(0, 0, 0);
+ 
+}
+.Container-PassoaPasso{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-PassoaPasso {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  
+  .passo {
+    display: flex;
+    align-items: flex-start;
+    margin: 15px 0;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .passo span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .passo-textarea {
+    width:  314px;
+    height: 130px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .adicionar-passo {
+  
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+  }
+  
+  .adicionar-passo:hover {
+    background-color: #218838;
+  }
+  
+  .excluir-passo {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 30px;
+  }
+  
+  .excluir-passo:hover {
+    background-color: #c82333;
+  }
+  
