@@ -1,0 +1,67 @@
+.Container-Ingrediente{
+    width: 100VW;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.custom-minor-line {
+    width: 80%;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    border-top: 3px solid rgb(0, 0, 0);
+}
+
+.Container-Ingrediente {
+    margin: 20px;
+}
+
+.ingredient-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredient-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ingredient-item input {
+    margin-right: 10px;
+    padding: 5px;
+    width: 120px;
+}
+
+.ingredient-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.ingredient-item button:hover {
+    background-color: #ff1a1a;
+}
+
+.add-ingredient-button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #60dd7d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.add-ingredient-button:hover {
+    background-color: #0cc12a;
+}
+
+.custom-minor-line {
+    border-top: 1px solid #bbb;
+}
