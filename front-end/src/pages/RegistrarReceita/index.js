@@ -4,6 +4,7 @@ import AdicionarReceita from "./components/AdcionarReceita";
 import SearchableComponent from "./components/Categorias";
 import Ingredientes from "./components/Ingredientes";
 import PassoaPasso from "./components/PassoaPasso";
+import Footer from "../../components/Footer";
 
 const RegistrarReceita = () => {
   const handleSalvar = () => {
@@ -47,6 +48,9 @@ const RegistrarReceita = () => {
           </button>
         </div>
       </div>
+          <div>
+            <Footer/>
+          </div>
     </div>
   );
 };
