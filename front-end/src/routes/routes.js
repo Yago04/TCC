@@ -18,7 +18,7 @@ import Parceiros from "../components/Parceiros";
 import Navbar from "../components/NavBar";
 import ResultadoPesquisa from "../pages/Categoria";
 import Categoria from "../pages/RegistrarReceita";
-import PassoaPasso from "../pages/RegistrarReceita/";
+import PassoaPasso from "../pages/RegistrarNoticia";
 
 
 
