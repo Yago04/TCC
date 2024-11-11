@@ -1,0 +1,119 @@
+.news-registration {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .news-registration h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .news-registration hr {
+    margin: 20px 0;
+  }
+  
+  .news-registration label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .news-registration input[type="text"],
+  .news-registration textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .news-registration textarea {
+    height: 80px;
+    resize: vertical;
+  }
+  
+  .news-registration .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .news-registration .category-tag {
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .news-registration .category-tag button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .news-registration .add-category-btn {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .news-registration .photo-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .news-registration .photo-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .news-registration .action-buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .news-registration .action-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .news-registration .cancel-btn {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .news-registration .save-btn {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .news-registration p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .news-registration a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
