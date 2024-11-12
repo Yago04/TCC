@@ -116,4 +116,11 @@
     color: #007bff;
     text-decoration: none;
   }
-  
+
+.container-Footer{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
