@@ -47,6 +47,7 @@ function NewsRegistration() {
   };
 
   return (
+  <div>
     <div className="news-registration">
       <h2>Registrar Notícia</h2>
       <hr className="custom-line" />
@@ -106,8 +107,11 @@ function NewsRegistration() {
         <button onClick={handleCancel} className="cancel-btn">Cancelar</button>
         <button onClick={handleSave} className="save-btn">Salvar</button>
       </div>
-     
 
+      </div>
+      <div className='container-Footer'>
+        <Footer/>
+      </div>
     </div>
   );
 }
