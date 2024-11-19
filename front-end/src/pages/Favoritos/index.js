@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Favoritos.css';
 import RecipeGrid from '../Categoria/components/ResultadoPesquisa';
+import  Navbar  from '../../components/NavBar';
+import Footer from '../../components/Footer'
+
 
 const Favoritos = () => {
     const [activeTab, setActiveTab] = useState('receitas');
@@ -47,6 +50,7 @@ const Favoritos = () => {
 
     return (
         <div>
+            <Navbar/>
             <div className="Container-Adcionar">
                 <hr className="custom-line" />
                 <h5>Favoritos</h5> {/* Título principal */}
@@ -74,6 +78,9 @@ const Favoritos = () => {
                     <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>Próxima</button>
                 </div>
             )}
+            <div className='container-Footer' style={{ marginTop: "50px"}}>
+                <Footer/>
+            </div>
         </div>
     );
 };
