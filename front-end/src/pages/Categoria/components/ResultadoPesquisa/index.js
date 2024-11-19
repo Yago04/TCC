@@ -17,7 +17,7 @@ const RecipeGrid = ({ recipes = [], title, count }) => {
   return (
     <div className="recipe-grid">
       <div className='container-titleLine'>
-        <h2>{title} ({count})</h2> {/* Título dinâmico usando props */}
+        <h2>{title} Receitas ({count})</h2> {/* Título dinâmico usando props */}
         <hr className="custom-line" />
       </div>
       <div className="row">

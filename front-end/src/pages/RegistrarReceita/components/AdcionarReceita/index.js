@@ -7,7 +7,7 @@ const AdicionarReceita = () => {
             
             <div className="Container-Adcionar">
                 <hr className="custom-line" />
-                <h5>Adcionar Receita</h5>
+                <h5>Adicionar Receita</h5>
             </div>
             <div className="Container-Receita">
                 <input type="text" placeholder="Titulo da Receita"></input>
