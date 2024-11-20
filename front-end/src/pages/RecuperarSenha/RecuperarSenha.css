@@ -1,0 +1,68 @@
+.forgot-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); /* Ajusta para compensar o navbar e o footer */
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.forgot-password-container h2 {
+    font-size: 2.8rem;
+    color: #e63946;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forgot-password-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 560px;
+}
+
+.forgot-password-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.forgot-password-card label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.forgot-password-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+.forgot-password-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: #ff6f00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.forgot-password-button:hover {
+    background: #e85d00;
+}

@@ -85,6 +85,10 @@ const TelaLogin = () => {
                 </div>
               </div>
 
+              <div className='Esqueceu_senha'>
+                <a href='../'>Esqueceu a senha</a>
+              </div>
+
               {/* Botões de Login */}
               <div className='button-login'>
                 <button type='submit' href='/Home'>Login</button>

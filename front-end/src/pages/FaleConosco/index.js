@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './FaleConosco.css';
 import Navbar from "../../components/NavBar";
+import Footer from "../../components/Footer";
 
 const FaleConosco = () => {
     const [activeIndex, setActiveIndex] = useState(null); // Controla qual item está aberto
@@ -62,6 +63,9 @@ const FaleConosco = () => {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div>
+                <Footer/>
             </div>
         </div>
     );
