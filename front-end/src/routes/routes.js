@@ -18,7 +18,7 @@ import Parceiros from "../components/Parceiros";
 import Navbar from "../components/NavBar";
 import ResultadoPesquisa from "../pages/Categoria";
 import Categoria from "../pages/RegistrarReceita";
-import Favoritos from "../pages/Dashboard";
+import Menu from "../pages/Menu/app";
 
 
 
@@ -30,7 +30,7 @@ const RoutesPath = () => {
        <Routes>      
            <Route element = { <TelaCadastro/> }  path="/register" />
            <Route element = {<TelaLogin/>} path="/login"/>
-           <Route element = {<Favoritos/>}  path=""/>
+           <Route element = {<Menu/>}  path=""/>
         
        </Routes>
    )
