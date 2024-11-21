@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Planejamento.css';
 import Footer from '../../components/Footer'
+import { Navbar } from "reactstrap";
 
 const Planejamento = () => {
     const [dropdowns, setDropdowns] = useState({
@@ -27,6 +28,9 @@ const Planejamento = () => {
     return (
         <div>
         <div className="planejamento-container">
+            <div>
+                <Navbar/>
+            </div>
             {/* Título */}
             <div className="container-title">
                 <hr className="custom-line" />

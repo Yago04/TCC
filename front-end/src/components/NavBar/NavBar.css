@@ -1,252 +1,186 @@
-/* Navbar Container */
-.navbar-menu{
+/* Navbar */
+.navbar-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+    width: 100%;
+}
+
+.navbar-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ .logo-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Avatar */
+.user-avatar {
+    position: relative;
+    cursor: pointer;
+}
+
+.avatar-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #ff6f00;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.logout-button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Menu Horizontal */
+.horizontal-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ff6f00;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    padding: 10px 0px;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    color: rgb(14, 13, 13);
-
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    visibility: hidden;
+    z-index: 1000;
+    height: 180%;
 }
 
-/* Logo */
-.navbar-logo-menu {
-    margin-left: 40px;
-    position: relative;
-    z-index: 200;
+.horizontal-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
 }
 
-.navbar-logo-menu h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-/* Menu Icon */
-.menu-icon {
-    width: 35px;
-    height: 30px;
+/* Avatar Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    z-index: 1000;
 }
 
-.menu-icon div {
-    width: 100%;
-    height: 4px;
-    background-color: #000000;
-    border-radius: 2px;
-    transition: 0.4s;
-}
-
-/* Menu Icon Animation */
-.menu-icon .bar1.open {
-    transform: rotate(45deg) translate(5px, 12px);
-}
-
-.menu-icon .bar2.open {
-    opacity: 0;
-}
-
-.menu-icon .bar3.open {
-    transform: rotate(-45deg) translate(6px, -15px);
-}
-
-/* Navigation Links */
-.navbar-links-menu {
-    position: fixed;
-    top: 0;
-    left: -220px;
-    width: 200px;
-    height: 100%;
-    background-color: #FF5800;
-    color: white;
-    transition: 0.5s;
-    padding-top: 60px;
-    z-index: 500;
-}
-
-.navbar-links-menu.show {
-    left: 0;
-}
-
-.navbar-links-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navbar-links-menu ul li {
-    padding: 10px;
-    text-align: center;
-}
-
-.navbar-links-menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navbar-links-menu ul li a:hover {
-    color: #050505;
-}
-
-/* Right Side (Search, Profile, Favorites) */
-.navbar-right-menu {
+/* Barra de Pesquisa */
+.search-container {
     display: flex;
     align-items: center;
     gap: 10px;
+    overflow: hidden;
+    transition: width 0.2s ease, opacity 0.2s ease;
 }
 
-.search-container-menu {
-    position: relative; /* Contêiner para posicionar o ícone */
-    
+.search-container.active {
+    width: 100%;
 }
-.search-bar-menu{
-    width: 450px;
-    padding: 10px 40px 10px 15px; 
-    border: 2px solid transparent;
+
+.search-bar {
+    width: 0;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease;
-    background-color: #f0f0f0;
+    font-size: 14px;
+    opacity: 0;
+    transition: width 0.5s ease, opacity 0.5s ease;
 }
 
+.search-container.active .search-bar {
+    width: 200px;
+    opacity: 1;
+}
 
-.search-icon-menu {
+/* Avatar Menu */
+.dropdown-menu {
     position: absolute;
-    right: 10px; /* Posiciona o ícone à direita do campo */
-    top: 50%;
-    transform: translateY(-50%); /* Centraliza o ícone verticalmente */
-    pointer-events: none; /* Evita interferência do ícone no clique */
-    font-size: 18px;
-}
-
-.search-bar-menu:focus {
-    border-color: #858585;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.icon-button-1 {
-    background-color: #FF5B00;
-    border: 2px solid;
-    color: #ffffff;
-    border-color:#FF5800 ;
-    cursor: pointer;
-    padding: 10px;
-    transition: background-color 0.3s;
-    border-radius: 7px;
-    text-decoration: none;
-
-}
-.icon-button-2 {
+    top: 50px;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    border: 2px solid;
-    color: #FF5B00;
-    cursor: pointer;
-    padding: 10px;
-    transition: background-color 0.3s;
-    border-radius: 7px;
-    width: 60px;
-    height: 50px;
+    flex-direction: column;
+}
+
+.menu-link {
     text-decoration: none;
-
-}
-.icon-button-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border: 2px solid;
-    color: #FF5B00;
-    cursor: pointer;
-    padding: 10px;
-    transition: background-color 0.3s;
-    border-radius: 7px;
-    width: 60px;
-    height: 50px;
-    text-decoration: none;
-
+    color: #ddd;
+    position: relative; /* Necessário para usar ::after */
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-.icon-button-2 :hover {
-    background-color: #ff2d2d;
+.menu-link:hover {
+    color: #fff; /* Muda a cor do texto ao passar o mouse (opcional) */
 }
 
-.icon-button-3 svg {
-    width: 24px;
-    height: 24px;
-    color: green;
-    
+.menu-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Posição da linha abaixo do texto */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff; /* Cor da linha */
+    transition: width 0.3s ease; /* Suaviza o efeito */
 }
 
-
-/* Para telas pequenas (máximo de 768px) */
-@media (max-width: 768px) {
-    /* Esconder os itens do lado direito da navbar */
-    .navbar-right-menu, .search-container-menu {
-        display: none;
-    }
-
-    /* Mostrar os itens de login, registro e pesquisa dentro do menu lateral */
-    .navbar-links-menu ul {
-        padding: 0;
-    }
-
-    .navbar-links-menu ul li a {
-        display: block;
-        padding: 15px;
-        color: white;
-        font-size: 18px;
-    }
-
-    /* Adicionar os botões e a barra de pesquisa no menu lateral */
-    .navbar-links-menu ul {
-        padding-top: 20px;
-    }
-
-    .navbar-links-menu ul li:nth-child(5),
-    .navbar-links-menu ul li:nth-child(6),
-    .navbar-links-menu ul li:nth-child(7) {
-        display: block;
-    }
-
-    .navbar-links-menu ul li:nth-child(5) {
-        padding: 10px;
-    }
-
-    /* Estilos para a barra de pesquisa no menu lateral */
-    .navbar-links-menu input.search-bar-menu {
-        width: 100%;
-        padding: 10px;
-        margin-top: 10px;
-        border: none;
-        border-radius: 5px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar-right-menu, .search-container-menu {
-        display: none; /* Esconder na navbar superior */
-    }
-
-
-    .navbar-links-menu .icon-button-1,
-    .navbar-links-menu .icon-button-2,
-    .navbar-links-menu .icon-button-3,
-    .navbar-links-menu .search-bar-menu {
-        display: block; /* Mostrar dentro do menu lateral */
-        margin: 10px;
-    }
+.menu-link:hover::after {
+    width: 100%; /* Aumenta a linha para 100% da largura do link */
 }

@@ -4,7 +4,7 @@ import './TelaLogin.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import GoogleIcon from '../../UI/GoogleIcon';
 import Footer from '../../components/Footer';
-import axios from 'axios'; // Importa o axios para fazer requisições
+import axios from 'axios'; 
 
 const TelaLogin = () => {
   const [senhaVisivel, setSenhaVisivel] = useState(false);
@@ -86,7 +86,7 @@ const TelaLogin = () => {
               </div>
 
               <div className='Esqueceu_senha'>
-                <a href='../'>Esqueceu a senha</a>
+                <a href='./senha'>Esqueceu a senha</a>
               </div>
 
               {/* Botões de Login */}

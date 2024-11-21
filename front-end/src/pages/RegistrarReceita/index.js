@@ -4,6 +4,7 @@ import AdicionarReceita from "./components/AdcionarReceita";
 import SearchableComponent from "./components/Categorias";
 import Ingredientes from "./components/Ingredientes";
 import PassoaPasso from "./components/PassoaPasso";
+import Navbar from "../../components/NavBar";
 
 const RegistrarReceita = () => {
   const handleSalvar = () => {
@@ -18,6 +19,10 @@ const RegistrarReceita = () => {
 
   return (
     <div>
+      <div>
+        <Navbar/>
+      </div>
+
       <AdicionarReceita />
 
       <div>
