@@ -8,6 +8,7 @@ import Dashboard from "../pages/Dashboard";
 import Receita from "../pages/RegistrarReceita";
 import Configuracao from "../pages/Configuracao";
 import Planejamento from "../pages/planejamento";
+import Receitas  from "../pages/Categoria";
 import Perfil from "../pages/Menu/app";
 import Home from "../pages/Home";
 
@@ -27,6 +28,7 @@ const RoutesPath = () => {
            <Route element = {<Configuracao/>} path="/configuracao"/>
            <Route element = {<Planejamento/>} path="/planejamento"/>
            <Route element = {<Perfil/>} path="/perfil"/>
+           <Route element = {<Receitas/>} path="/receitas"/>
            <Route element = {<Home/>} path=""/>
           
         

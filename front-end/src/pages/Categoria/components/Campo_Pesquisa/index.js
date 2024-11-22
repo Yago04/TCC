@@ -8,7 +8,7 @@ const CampoPesquisa = () => {
             <div className="Titulo_pesquisa">
                 <hr className="custom-line" />
                 <h1 className="title">Resultado da pesquisa por</h1>
-                <input className="Campo-Resultado" type="Text" placeholder="Banana" disabled></input>
+                <input className="Campo-Resultado" type="Text" placeholder="Banana" ></input>
 
                 <div className="Container-buttons">   
                     <button disabled>200 Receitas</button>
