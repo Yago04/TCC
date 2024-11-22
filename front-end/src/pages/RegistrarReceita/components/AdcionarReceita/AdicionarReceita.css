@@ -1,0 +1,32 @@
+.Container-flex{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Container-Adcionar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Container-Adcionar h5 {
+    font-size: 2rem;
+}
+
+.Container-Receita{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Container-Receita textarea{
+    width: 48%;
+    height: 200px;
+}
