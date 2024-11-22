@@ -1,0 +1,32 @@
+.main-tag{
+    width: 80%;
+    margin-top: 35px ;
+}
+
+.topo-tag h2{
+    font-size: 1.5rem;
+}
+
+.tags{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tag{
+    width: 130px;
+    height: 40px;
+
+    background-color: #ff590084;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag p{
+    font-weight: bold;
+    margin: 0;
+}
+

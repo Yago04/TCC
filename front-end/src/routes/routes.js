@@ -17,6 +17,7 @@ import Nutricionistas from "../components/Nutricionistas";
 import Parceiros from "../components/Parceiros";
 import Navbar from "../components/NavBar";
 import ResultadoPesquisa from "../pages/Categoria";
+import Receita from "../pages/Receita";
 
 
 
@@ -30,7 +31,8 @@ const RoutesPath = () => {
            <Route element = { <TelaCadastro/> }  path="/register" />
            <Route element = {<TelaLogin/>} path="/login"/>
            <Route element = {<ResultadoPesquisa/>}  path=""/>
-           
+           <Route element = {<Receita/>} path="/recipe" />
+
        </Routes>
    )
 }

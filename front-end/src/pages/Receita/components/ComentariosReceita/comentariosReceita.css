@@ -1,0 +1,105 @@
+.main-comentarios-receita{
+    width: 80%;
+    margin-top: 30px;
+}
+
+.topo-comentarios{
+    width: 100%;
+}
+
+.topo-comentarios h1{
+    font-size: 2.5rem;
+}
+
+.criar-comentario{
+    width: 80%;
+    height: 40px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.criar-comentario img{
+    width: 40px;
+    height: 40px;
+}
+
+.criar-comentario input{
+    border-radius: 30px;
+}
+
+.criar-comentario button{
+    width: 120px;
+    height: 40px;
+
+    background-color: #ff5900e0;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: 500;
+}
+
+.comentarios{
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comentario{
+    /* margin-top: 10px; */
+    width: 550px;
+    height: 140px;
+
+    background-color: #d9d9d936;
+    border-radius: 5px;
+    border: 1px solid #0000002b;
+}
+
+.avatar-comentario{
+    padding: 10px;
+    display: flex;
+    /* justify-content: fle; */
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar-comentario img{
+    width: 25px;
+    height: 25px;
+}
+
+.avatar-comentario a{
+    margin: 0;
+}
+
+.comentario-texto{
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.comentario-texto p{
+    font-size: 1rem;
+}
+
+.comentario-reacao{
+    width: 100%;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.comentario-reacao button{
+    background-color: transparent;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.comentario-reacao img{
+    width: 20px;
+    height: 20px;
+    border-radius: 0px;
+}

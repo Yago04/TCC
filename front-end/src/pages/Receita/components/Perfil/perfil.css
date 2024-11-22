@@ -1,0 +1,47 @@
+.principal-perfil{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-perfil{
+
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-perfil img{
+    width: 90px;
+    height: 90px;
+}
+
+.acoes-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.acoes-perfil button{
+    width: 60px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #ff5900d7;
+    font-size: 1rem;
+}
+
+.main-perfil p{
+    width: 20%;
+    text-align: center;
+}
+
+.seguidores-perfil{
+    padding-left: 30px;
+    display: flex;
+    gap: 20px
+}

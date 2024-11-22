@@ -1,0 +1,12 @@
+.separator{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.separator > div{
+    width: 80%;
+    height: 2px;
+    background-color: black;
+}
