@@ -111,7 +111,7 @@ const TelaCadastro = () => {
           </div>
           <div className="form-row">
             <input
-              type="text"
+              type="number"
               name="phone"
               placeholder="Telefone"
               value={formData.phone}
@@ -154,9 +154,6 @@ const TelaCadastro = () => {
             />
           </div>
           <button type="submit" className="register-button">Registrar</button>
-          <button className="google-button">
-            <GoogleIcon/> Continue com Google
-          </button>
         </form>
       </div>
       <div className='footer'>

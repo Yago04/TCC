@@ -51,21 +51,15 @@ const Favoritos = () => {
     return (
         <div>
             <Navbar/>
-            <div className="Container-Adcionar">
-                <hr className="custom-line" />
-                <h5>Favoritos</h5> {/* Título principal */}
-            </div>
-            <div className='container-button'>
-                <button onClick={() => handleTabChange('receitas')} className={activeTab === 'receitas' ? 'active' : ''}>Receitas</button>
-                <button onClick={() => handleTabChange('postagens')} className={activeTab === 'postagens' ? 'active' : ''}>Postagens</button>
-            </div>
+        
+        
 
             <div className='Container-line'>
                 <hr className="custom-line" />
             </div>
 
 
-            {/* Renderização dos itens */}
+          
             <div className="content">
                 <RecipeGrid recipes={currentItems} title={title} count={itemCount} /> {/* Passa os dados para o RecipeGrid */}
             </div>

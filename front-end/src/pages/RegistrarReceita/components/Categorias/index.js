@@ -73,6 +73,8 @@ const SearchableComponent = () => {
                             onChange={(e) => setPreparo(e.target.value)}
                             placeholder="Minutos"
                             className="time-input"
+                            
+
                         />
                         <select className="time-select">
                             <option>Minutos</option>
@@ -88,6 +90,7 @@ const SearchableComponent = () => {
                             onChange={(e) => setCozimento(e.target.value)}
                             placeholder="Minutos"
                             className="time-input"
+                           
                         />
                         <select className="time-select">
                             <option>Minutos</option>

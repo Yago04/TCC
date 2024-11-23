@@ -115,7 +115,7 @@ const Navbar = () => {
             {/* Menu Horizontal */}
             <div className={`horizontal-menu ${isMenuOpen ? 'show' : ''}`}>
                 <a href="/" className="menu-link">Início</a>
-                <a href="/sobre" className="menu-link">Sobre</a>
+                <a href="/FaleConosco" className="menu-link">Fale Conosco</a>
                 <a href="/filtroreceita" className="menu-link">Receitas</a>
                 <a href="/contato" className="menu-link">Contato</a>
             </div>

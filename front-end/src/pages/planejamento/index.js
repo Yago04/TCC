@@ -189,7 +189,7 @@ const Planejamento = () => {
             </div>
 
         </div>
-            <div className="container-Footer">
+            <div className="container-Footer-planejamento">
                     <Footer/>
             </div>
         </div>

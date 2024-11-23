@@ -21,12 +21,12 @@ const MenuIten = () => {
           </div>
           <div class="item">
           <img src="https://images.vexels.com/media/users/3/143479/isolated/lists/e9f70459fc4462131316b495865cd4f8-desenho-do-icone-do-taco.png"/>
-              <h3>I don’t Know</h3>
+              <h3>Receitas na palma da sua mão</h3>
               <p>Receitas feitas para você, metas alcançadas com sabor!</p>
           </div>
           <div class="item">
           <img src="https://images.vexels.com/media/users/3/270749/isolated/lists/c3c8bb0745df004cb6a5887acd32821b-a-cone-detalhado-de-aba-bora.png"/>
-              <h3>I don’t Know</h3>
+              <h3>Comendo de maneira certa</h3>
               <p>Receitas feitas para você, metas alcançadas com sabor!</p>
           </div>
         </div>

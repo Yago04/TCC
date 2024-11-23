@@ -92,10 +92,7 @@ const TelaLogin = () => {
               {/* Botões de Login */}
               <div className='button-login'>
                 <button type='submit' href='/Home'>Login</button>
-                <button className='button-login-gg'>
-                  <GoogleIcon />
-                  Continue com Google
-                </button>
+               
               </div>
             </form>
           </div>

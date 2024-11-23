@@ -68,25 +68,6 @@ input[type="date"] {
   cursor: pointer;
   font-size: 16px;
   margin-top: 10px;
+  margin-bottom: 70px;
 }
 
-.google-button {
-  width: 100%;
-  background-color: #fff;
-  color: #555;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.google-button img {
-  width: 20px;
-  margin-right: 10px;
-}

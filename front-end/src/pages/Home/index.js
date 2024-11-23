@@ -18,7 +18,6 @@ import Footer from '../../components/Footer';
 
 
 
-
 const HOME = () => {
   return (
     <div className='cadastro-principal'>
