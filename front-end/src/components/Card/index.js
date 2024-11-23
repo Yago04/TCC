@@ -25,7 +25,7 @@ const CardComida = ({ receita }) => {
         ))}
       </div>
 
-      <button className="button-receita">Ver Receita</button>
+     <a href="./receitas"> <button className="button-receita">Ver Receita</button>  </a>
     </div>
   );
 };

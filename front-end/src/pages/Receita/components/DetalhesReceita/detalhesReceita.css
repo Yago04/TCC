@@ -1,0 +1,49 @@
+.main-detalhes-receita{
+    width: 80%;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.passos-receita{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topo-passos{
+    width: 100%;
+    text-align: start;
+}
+
+.topo-passos h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.passos-receita li {
+    font-weight: 450;
+    font-size: 1rem;
+
+}
+
+.ingredientes-receita{
+    width: 45%;
+}
+
+.topo-ingredientes{
+    width: 100%;
+    text-align: start;
+}
+.topo-ingredientes h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ingredientes-receita li {
+    font-weight: 450;
+    font-size: 1rem;
+
+}

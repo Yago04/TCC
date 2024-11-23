@@ -27,7 +27,7 @@ const Navbar = () => {
     return (
         <div className="navbar-principal">
             <div className="navbar-logo">
-                <a href="/" className="logo-text">NUTRICHEF</a>
+                <a href="/home" className="logo-text">NUTRICHEF</a>
             </div>
 
            
@@ -116,7 +116,7 @@ const Navbar = () => {
             <div className={`horizontal-menu ${isMenuOpen ? 'show' : ''}`}>
                 <a href="/" className="menu-link">Início</a>
                 <a href="/sobre" className="menu-link">Sobre</a>
-                <a href="/receitas" className="menu-link">Receitas</a>
+                <a href="/filtroreceita" className="menu-link">Receitas</a>
                 <a href="/contato" className="menu-link">Contato</a>
             </div>
         </div>

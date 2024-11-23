@@ -14,6 +14,7 @@
     background: white;
     padding: .4em;
     border: none;
+    align-items: center;
   }
   img{
     width: 280px;
@@ -112,7 +113,7 @@
   }
 
   /* From Uiverse.io by niat786 */ 
-.button-receita {
+.button-receita  {
   border: none;
   color: #fff;
   background-image: linear-gradient(30deg, #F17228, #f0894c);
