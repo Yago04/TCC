@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import './TelaCadastro.css';
 import Navbar from '../../components/NavBar';
 import Footer from '../../components/Footer';
-import GoogleIcon from '../../UI/GoogleIcon';
-import axios from 'axios';
 
 const TelaCadastro = () => {
   const [formData, setFormData] = useState({
@@ -25,56 +23,43 @@ const TelaCadastro = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    // Log para verificar os dados do formulário
-    console.log("Dados do formulário (formData):", formData); // Verifica o que está no estado formData
-  
+
     // Verifica se os campos de confirmação de email e senha coincidem
-    if (formData.email !== document.querySelector('input[name="confirmEmail"]').value) {
+    const confirmEmail = e.target.confirmEmail.value;
+    const confirmPassword = e.target.confirmPassword.value;
+
+    if (formData.email !== confirmEmail) {
       alert('Os e-mails não coincidem.');
       return;
     }
-    if (formData.password !== document.querySelector('input[name="confirmPassword"]').value) {
+    if (formData.password !== confirmPassword) {
       alert('As senhas não coincidem.');
       return;
     }
-  
+
     try {
-      // Log para indicar que está iniciando a requisição ao backend
-      console.log("Iniciando requisição ao backend...");
-  
-      // Faz a requisição com o formData original
       const response = await axios.post('http://localhost:3001/api/users/register', formData);
-  
-      // Log para verificar a resposta completa do axios
-      console.log("Resposta do backend:", response); // Verifica a resposta completa
-      console.log("Dados retornados pelo backend:", response.data); // Verifica o data retornado pelo backend
-  
-      // Exibe a mensagem do backend ou avisa se estiver indefinido
-      if (response.data && response.data.message) {
+      if (response.data?.message) {
         alert(response.data.message);
       } else {
-        alert("Resposta do backend não contém 'message'. Verifique a resposta no console.");
+        alert("Erro inesperado. Verifique a resposta no console.");
       }
     } catch (error) {
-      // Log para verificar o erro completo
-      console.error('Erro ao registrar (código de status e resposta):', error.response?.status, error.response?.data); // Verifica o status e dados do erro
+      console.error('Erro ao registrar:', error.response?.data || error.message);
       alert(error.response?.data?.error || 'Erro desconhecido ao registrar.');
     }
   };
+
   return (
-    <body>
     <div>
       <header>
         <Navbar />
       </header>
-      <div className="page-heading ">
+      <main className="page-container">
         <h1>Mude seus Hábitos!</h1>
         <h2>Faça seu registro!</h2>
-      </div>
 
-      <div className="form-container">
-        <form className='form' onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <div className="form-row">
             <input
               type="text"
@@ -155,14 +140,12 @@ const TelaCadastro = () => {
           </div>
           <button type="submit" className="register-button">Registrar</button>
         </form>
-      </div>
-      <div className='footer'>
+      </main>
+      <footer>
         <Footer />
-      </div>
+      </footer>
     </div>
-    </body>
   );
 };
-
 
 export default TelaCadastro;

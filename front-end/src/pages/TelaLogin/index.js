@@ -4,7 +4,7 @@ import './TelaLogin.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import GoogleIcon from '../../UI/GoogleIcon';
 import Footer from '../../components/Footer';
-import axios from 'axios'; 
+
 
 const TelaLogin = () => {
   const [senhaVisivel, setSenhaVisivel] = useState(false);
@@ -53,7 +53,7 @@ const TelaLogin = () => {
               <div className='email'>
                 <label>E-mail </label>
                 <input
-                  placeholder='Digite o seu e-mail'
+                  placeholder="E-mail"
                   type="email"
                   name="email"
                   value={formData.email}
@@ -79,6 +79,7 @@ const TelaLogin = () => {
                     type="button"
                     className="botao-visualizar"
                     onClick={toggleSenha}
+                    aria-label="visualizar senha"
                   >
                     <i className={`fa ${senhaVisivel ? 'fa-eye-slash' : 'fa-eye'}`}></i>
                   </button>
@@ -92,7 +93,7 @@ const TelaLogin = () => {
               {/* Botões de Login */}
               <div className='button-login'>
                 <button type='submit' href='/Home'>Login</button>
-               
+
               </div>
             </form>
           </div>

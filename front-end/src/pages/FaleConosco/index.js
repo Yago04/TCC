@@ -49,8 +49,11 @@ const FaleConosco = () => {
                             className={`faq-item ${activeIndex === index ? "active" : ""}`}
                         >
                             <div
-                                className="faq-question"
-                                onClick={() => toggleFAQ(index)}
+                               role="button"
+                               className="faq-question"
+                               aria-label={item.question}
+                               aria-expanded={activeIndex === index}
+                               onClick={() => toggleFAQ(index)}
                             >
                                 {item.question}
                                 <span className="faq-icon">

@@ -30,10 +30,15 @@ const Navbar = () => {
                 <a href="/home" className="logo-text">NUTRICHEF</a>
             </div>
 
-           
+
             <div className="navbar-icons">
-                
-                <div className="menu-icon" onClick={toggleMenu}>
+
+                <div
+                    className="menu-icon"
+                    onClick={toggleMenu}
+                    role="button"
+                    aria-label="menu"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="24px"
@@ -41,6 +46,7 @@ const Navbar = () => {
                         viewBox="0 0 24 24"
                         fill="#ff6f00"
                         className={`menu-svg ${isMenuOpen ? 'open' : ''}`}
+                        data-testid="menu-svg"
                     >
                         {!isMenuOpen ? (
                             <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
@@ -52,13 +58,23 @@ const Navbar = () => {
 
                 {/* Barra de Pesquisa */}
                 <div className={`search-container ${isSearchOpen ? 'active' : ''}`}>
+                    {/* Input de Pesquisa */}
                     <input
                         type="text"
                         className="search-bar"
                         placeholder="Pesquisar..."
+                        aria-label="campo de pesquisa"
                         style={{ display: isSearchOpen ? 'block' : 'none' }}
                     />
-                    <div className="search-icon" onClick={toggleSearch}>
+
+                    {/* Botão para Alternar a Barra de Pesquisa */}
+                    
+                    <div
+                        className="search-icon"
+                        onClick={toggleSearch}
+                        role="button"
+                        aria-label="search"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff6f00">
                             <path d="M0 0h24v24H0z" fill="none" />
                             <path d="M15.5 14h-.79l-.28-.27a6.518 6.518 0 001.48-5.34C15.24 5.26 13.07 3 10.5 3S5.76 5.26 5.06 7.39c-.41 1.24-.44 2.59-.11 3.85.32 1.25 1.01 2.41 1.94 3.29a6.518 6.518 0 005.34 1.48l.27-.28v-.79l4.25 4.25c.39.39 1.02.39 1.41 0l.09-.09c.39-.39.39-1.02 0-1.41L15.5 14zm-5 0C8.01 14 6 11.99 6 9.5S8.01 5 10.5 5 15 7.01 15 9.5 12.99 14 10.5 14z" />
@@ -66,14 +82,15 @@ const Navbar = () => {
                     </div>
                 </div>
 
-              
-                <div className="favorites-icon">
-                    <a href='./favoritos'> 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff6f00">
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                    </svg>
+
+                <div className="favorites-icon">
+                    <a href='./favoritos'>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff6f00">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
 
                     </a>
                 </div>
@@ -95,6 +112,7 @@ const Navbar = () => {
                                     <a href="/receita" className="dropdown-item">Adicionar Receita</a>
                                     <a href="/Configuracao" className="dropdown-item">Configurações</a>
                                     <button
+                                        name='encerrar'
                                         className="dropdown-item logout-button"
                                         onClick={handleLoginLogout}
                                     >
@@ -113,12 +131,13 @@ const Navbar = () => {
             </div>
 
             {/* Menu Horizontal */}
-            <div className={`horizontal-menu ${isMenuOpen ? 'show' : ''}`}>
+            <div  className={`horizontal-menu ${isMenuOpen ? 'show' : ''}`}  role="navigation" >
                 <a href="/" className="menu-link">Início</a>
                 <a href="/FaleConosco" className="menu-link">Fale Conosco</a>
                 <a href="/filtroreceita" className="menu-link">Receitas</a>
                 <a href="/contato" className="menu-link">Contato</a>
             </div>
+
         </div>
     );
 };

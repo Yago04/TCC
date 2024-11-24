@@ -35,4 +35,4 @@ const MenuIten = () => {
   )
 }
 
-export default MenuIten
+export default MenuIten;
